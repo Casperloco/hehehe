@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hallo wkwkwk🫶🏻💞</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Handlee&family=Sriracha&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://htmlku.com/lepaslelah/style.css">
+
+<!-- FIX iOS: background tidak menutup klik -->
+<style>
+  .background-overlay {
+    pointer-events: none;
+  }
+</style>
+
+<script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+</head>
+
+<body>
+
+<!-- AUDIO iOS SAFE -->
+<audio id="linkmp3" preload="none" playsinline>
+  <source src="https://feeldreams.github.io/audio/wedont.mp3" type="audio/mpeg">
+</audio>
+
+<div class="background-overlay"
+data-src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuwbO_NyQeozwcybDF1OaPMzQy0t8AYv718sFc_lFl6LqHdyZG9HgQ-Tp4rusKtixlYVKBP-ORlbn30Q1pdMa3SOZ4osL8Cvg100Uh6FeD639gn6h0WwAQr_nAeUPJE8GKNk9eqN1YgMln2VMKTQUcFlB1Th93N_QodkeMSiqw8K5OXMUd5Bv2yHAJSnch/s1600/81495.jpg">
+</div>
+
+<img id="finalGreetingImage" src="https://htmlku.com/0/panda/hearthappy.gif">
+
+<div id="finalGreeting">
+Hey my sunshine! ♡.ᐟ
+</div>
+
+<!-- HALAMAN 1 -->
+<div id="hal1">
+  <div class="envlope-wrapper">
+    <div id="envelope" class="close">
+      <div class="front flap"></div>
+      <div class="front pocket"></div>
+      <div class="envelope-heart">🤍</div>
+
+      <div class="letter">
+        <div class="letter-corner corner-tl"></div>
+        <div class="letter-corner corner-br"></div>
+        <div class="message">
+          <p>For You 🎉</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="reset">
+    <button onclick="startAll()">💭 Buka Surat Ini Ya</button>
+  </div>
+</div>
+
+<!-- HALAMAN 2 (WAJIB ADA UNTUK TEKS) -->
+<div id="hal2" class="kotak sembunyi">
+  <div id="kotakPesan"></div>
+  <button id="lanjut" onclick="pindahHal(3)" class="sembunyi">Lanjut</button>
+</div>
+
+<!-- HALAMAN 3 -->
+<div id="hal3" class="kotak sembunyi">
+  <div id="stiker3" class="stiker">
+    <img src="https://htmlku.com/0/panda/ciumin.gif">
+  </div>
+
+  <div id="containerPesan">
+    <p id="teksCinta"></p>
+    <p id="pesanAkhir"></p>
+    <p id="teksLucu"></p>
+  </div>
+</div>
+
+<div class="tombol">
+  <button onclick="balasWa()">💌 Balas</button>
+</div>
+
+<!-- TEKS -->
+<script>
+const txtDoa = "Aku Mau Bilang Sesuatu Nih Kalau Aku Suka Banget Banget Sama Kamu,Engga Tau Kenapa Kek Tiba Tiba Kesambet Hantu Tapi Aku Beneran Suka Kok💞";
+const txtPesanAkhir = "Kamu Mau Ga Jadi emm jadi apa ya wkwk jadi pacar aku ehhhh🥺💗";
+const txtLucu = "── ᯓᡣ𐭩<br>Good Afternoon Tetap Semangat💖<br><b>Bales Ya Pesan Ku</b>";
+</script>
+
+<script src="https://htmlku.com/lepaslelah/script.js"></script>
+
+<!-- FIX AUDIO iOS -->
+<script>
+function startAll(){
+  const audio = document.getElementById("linkmp3");
+  if(audio){
+    audio.muted = false;
+    audio.play().catch(()=>{});
+  }
+  bukaEnvelope();
+}
+</script>
+
+</body>
+</html>
